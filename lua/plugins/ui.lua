@@ -79,13 +79,13 @@ return {
     event = "VeryLazy",
     opts = {
       options = {
-        theme = "solarized_dark",
+        theme = "yorumi",
       },
     },
   },
   -- animatios
   {
-    "echasnovski/mini.animate",
+    "nvim-mini/mini.animate",
     event = "VeryLazy",
     opts = function(_, opts)
       opts.scroll = {
