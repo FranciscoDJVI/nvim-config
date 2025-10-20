@@ -18,7 +18,7 @@ require("lazy").setup({
   spec = {
     -- add LazyVim and import its plugins
     { "LazyVim/LazyVim", import = "lazyvim.plugins", opts = {
-      colorscheme = "synthweave",
+      colorscheme = "kanagawa",
     } },
     -- import any extras modules here
     { import = "lazyvim.plugins.extras.linting.eslint" },
@@ -29,6 +29,9 @@ require("lazy").setup({
     { import = "lazyvim.plugins.extras.lang.tailwind" },
     { import = "lazyvim.plugins.extras.util.mini-hipatterns" },
     -- import/override with your plugins
+    -- ai plugins
+    { import = "lazyvim.plugins.extras.ai.copilot" },
+    { import = "lazyvim.plugins.extras.ai.copilot-chat" },
     { import = "plugins" },
   },
   defaults = {
@@ -40,7 +43,7 @@ require("lazy").setup({
     version = false, -- always use the latest git commit
     -- version = "*", -- try installing the latest stable version for plugins that support semver
   },
-  install = { colorscheme = { "tokyonight", "habamax" } },
+  install = { colorscheme = { "tokyonight", "habamax", "onedark", "kanagawa", "yorumi" } },
   checker = {
     enabled = true, -- check for plugin updates periodically
     notify = false, -- notify on update

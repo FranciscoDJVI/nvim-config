@@ -2,6 +2,10 @@ return {
   {
     "folke/noice.nvim",
     opts = function(_, opts)
+      -- Modifica la tabla de presets para deshabilitar la paleta de comandos flotante
+      opts.presets.command_palette = false -- ESTA ES LA CLAVE para volver al cmdline inferior
+
+      -- Mantienes el resto de tu configuración
       table.insert(opts.routes, {
         filter = {
           event = "notify",
@@ -23,7 +27,7 @@ return {
     event = "VeryLazy",
     opts = {
       options = {
-        theme = "solarized_dark",
+        theme = "",
       },
     },
   },
@@ -79,7 +83,7 @@ return {
     event = "VeryLazy",
     opts = {
       options = {
-        theme = "yorumi",
+        theme = "",
       },
     },
   },
@@ -122,11 +126,11 @@ return {
         },
         preset = {
           header = [[
- / _|_ __ __ _ _ __         __| | _____   __
-| |_| '__/ _` | '_ \ _____ / _` |/ _ \ \ / /
-|  _| | | (_| | | | |_____| (_| |  __/\ V / 
-|_| |_|  \__,_|_| |_|      \__,_|\___| \_/  
-]],
+          / _|_ __ __ _ _ __         __| | _____   __
+          | |_| '__/ _` | '_ \ _____ / _` |/ _ \ \ / /
+          |  _| | | (_| | | | |_____| (_| |  __/\ V / 
+          |_| |_|  \__,_|_| |_|      \__,_|\___| \_/  
+        ]],
         },
       },
     },
